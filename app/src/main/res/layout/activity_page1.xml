@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.mccarthy.kern.animalsounds.page1">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CatSound"
+        android:onClick="playCat"
+        android:text="Cat" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/DogSound"
+        android:onClick="playDog"
+        android:text="Dog"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CowSound"
+        android:text="Cow"
+        android:onClick="playCow"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/SheepSound"
+        android:text="Sheep"
+        android:onClick="playSheep"
+        android:layout_alignTop="@+id/CatSound"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:id="@+id/Next"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="NextPage2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/CatSound"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/cat"
+        android:layout_toStartOf="@+id/SheepSound"
+        android:layout_above="@+id/CowSound"
+        android:layout_alignEnd="@+id/imageView3" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:src="@drawable/sheep"
+        android:layout_below="@+id/SheepSound"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/DogSound"
+        android:layout_toEndOf="@+id/CowSound"
+        android:layout_marginStart="111dp"
+        android:layout_marginBottom="40dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:layout_below="@+id/CowSound"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/cow"
+        android:layout_above="@+id/Next"
+        android:layout_toStartOf="@+id/DogSound"
+        android:layout_marginEnd="77dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView4"
+        android:layout_below="@+id/DogSound"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/dog"
+        android:layout_above="@+id/Next"
+        android:layout_toEndOf="@+id/CowSound"
+        android:layout_marginStart="100dp" />
+</RelativeLayout>

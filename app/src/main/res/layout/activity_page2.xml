@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.mccarthy.kern.animalsounds.page1">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/BirdSound"
+        android:onClick="playBird"
+        android:text="Bird" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/HorseSound"
+        android:onClick="playHorse"
+        android:text="Horse"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/MonkeySound"
+        android:text="Monkey"
+        android:onClick="playMonkey"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ElephantSound"
+        android:text="Elephant"
+        android:onClick="playElephant"
+        android:layout_alignTop="@+id/CatSound"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:id="@+id/Next"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="ReturnHome" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView5"
+        android:layout_below="@+id/BirdSound"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/bird"
+        android:layout_above="@+id/MonkeySound"
+        android:layout_toStartOf="@+id/ElephantSound"
+        android:layout_marginEnd="59dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView6"
+        android:layout_below="@+id/ElephantSound"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/elephant"
+        android:layout_alignBottom="@+id/imageView5"
+        android:layout_toEndOf="@+id/BirdSound"
+        android:layout_marginStart="103dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView7"
+        android:layout_below="@+id/HorseSound"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/horse"
+        android:layout_toEndOf="@+id/imageView8"
+        android:layout_above="@+id/Next" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView8"
+        android:layout_below="@+id/MonkeySound"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/monkey"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/imageView5"
+        android:layout_marginBottom="32dp" />
+</RelativeLayout>
